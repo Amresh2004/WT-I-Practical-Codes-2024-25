@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Slip 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 16pt;
+            text-align: center;
+        }
+
+        .form-container {
+            width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: skyblue;
+        }
+
+        form {
+            font-size: 12pt;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 50%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .priority-options {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        button[type="button"] {
+            background-color: green;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <u><h1>Project Management</h1></u>
+    <div class="form-container">
+        <form>
+            <b>
+            Project name:<input type="text" name="name" placeholder="project name">
+            <br>
+
+            Assigned to:
+            <select>
+                <option>Amresh</option>
+                <option>Shubham</option>
+                <option>Mitesh</option>
+            </select>
+            <br>
+
+            Start Date: <input type="date">
+            <br>
+
+            End Date: <input type="date">
+            <br>
+
+            <div class="priority-options">
+                Priority:
+                <input type="radio" name="priority" value="High">High
+                <input type="radio" name="priority" value="Average">Average
+                <input type="radio" name="priority" value="Low">Low
+            </div>
+
+            Description  
+            <textarea rows="2" cols="30"></textarea>
+            <br>
+
+            <center>
+                <button type="button">Submit</button>
+                <button type="reset">Clear</button>
+            </center>
+            </b>
+        </form>
+    </div>
+</body>
+</html>

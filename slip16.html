@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Form</title>
+</head>
+<body>
+    <h2>Enter Student Marks</h2>
+    <form method="post" action="your_php_file.php">
+        <!-- Subject 1 -->
+        <h3>Subject 1</h3>
+        <label for="serial1">Serial Number:</label>
+        <input type="text" id="serial1" name="subjects[0][serial]" required><br><br>
+
+        <label for="subject1">Subject Name:</label>
+        <input type="text" id="subject1" name="subjects[0][name]" required><br><br>
+
+        <label for="marks1">Marks (out of 100):</label>
+        <input type="text" id="marks1" name="subjects[0][marks]" required><br><br>
+
+        <!-- Subject 2 -->
+        <h3>Subject 2</h3>
+        <label for="serial2">Serial Number:</label>
+        <input type="text" id="serial2" name="subjects[1][serial]" required><br><br>
+
+        <label for="subject2">Subject Name:</label>
+        <input type="text" id="subject2" name="subjects[1][name]" required><br><br>
+
+        <label for="marks2">Marks (out of 100):</label>
+        <input type="text" id="marks2" name="subjects[1][marks]" required><br><br>
+
+        <!-- Subject 3 -->
+        <h3>Subject 3</h3>
+        <label for="serial3">Serial Number:</label>
+        <input type="text" id="serial3" name="subjects[2][serial]" required><br><br>
+
+        <label for="subject3">Subject Name:</label>
+        <input type="text" id="subject3" name="subjects[2][name]" required><br><br>
+
+        <label for="marks3">Marks (out of 100):</label>
+        <input type="text" id="marks3" name="subjects[2][marks]" required><br><br>
+
+        <input type="submit" name="submit" value="Calculate Results">
+    </form>
+</body>
+</html>
